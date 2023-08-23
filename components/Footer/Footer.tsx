@@ -9,6 +9,7 @@ const Footer = () => {
                     <h1>sfdsfds</h1>
                     <h1>dsfdsf</h1>
                     <h1>sdfdsfd</h1>
+                    <h1>sdfdsfdsfdsfdsf</h1>
                 </div>
             </footer>
         </>
