@@ -4,19 +4,16 @@ import s from './Hero.module.scss'
 const Hero = () => {
     return (
         <>
-            <div className={s.container}>
-                <div className={s.hero}>
-                    <div className={s.hero_content}>
+            <div className={s.hero_section}>
+                <div className={s.container}>
+                    <div className={s.content}>
                         <h1>
-                            Take <b>student experience</b>
-                            <br />
-                            to the next level
+                            Your Law College name <br />
+                            Building a Centre of excellence <br />
+                            in Legal Education
                         </h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br /> industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                        <button>Join Now</button>
-                    </div>
-                    <div className={s.banner}>
-                        <img src="/banner.png" alt="banner" />
+                        <p>Programmes Approved by Bar Council of Your Country</p>
+                        <button>Enroll Now</button>
                     </div>
                 </div>
             </div>

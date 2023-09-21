@@ -1,75 +1,74 @@
 .container {
-    max-width: 80%;
+    width: 90%;
     margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 
     .header {
         display: flex;
         justify-content: space-between;
-        height: 100px;
         align-items: center;
+        padding: 20px;
 
-        .logo {
-            h1 {
-                color: var(--black, #221E1E);
-                font-family: Poppins;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 0.183px;
-                text-transform: capitalize;
-            }
-        }
-
-        .nav {
-            display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
             align-items: center;
-            gap: 40px;
 
-            ul {
-                display: flex;
-                flex-direction: row;
-                gap: 15px;
+            .logo {
+                margin-bottom: 20px;
 
-                li {
-                    color: var(--blue-link, #2C66B8);
-                    font-family: Inter;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    text-transform: uppercase;
+            }
+
+            .nav {
+                text-align: center;
+
+                ul {
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
                 }
-
-                li:hover {
-                    color: var(--kobe-hover, #813013);
-                    transition: 0.4s;
-                }
-            }
-
-            img {
-                cursor: pointer;
-            }
-
-            button {
-                width: 150px;
-                height: 50px;
-                flex-shrink: 0;
-                border-radius: 8px;
-                background: #2C66B8;
-                color: #FFF;
-                font-family: Inter;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                text-transform: uppercase;
-            }
-
-            button:hover {
-                scale: 1.05;
-                transition: 0.2s;
             }
         }
     }
+
+    .logo {
+        img {
+            max-width: 100%;
+            width: 89.291px;
+            height: 93.186px;
+            flex-shrink: 0;
+        }
+    }
+
+    .nav {
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                opacity: 0.5;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
 }

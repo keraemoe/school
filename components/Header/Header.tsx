@@ -1,26 +1,41 @@
 import React from 'react';
 import s from './Header.module.scss'
+import Link from 'next/link';
 
 const Header = () => {
     return (
         <>
-            <header className={s.container}>
-                <div className={s.header}>
+            <div className={s.container}>
+                <header className={s.header}>
                     <div className={s.logo}>
-                        <h1>Logo Here</h1>
+                        <Link href="/">
+                            <img src="/logo.png" alt="Логотип" />
+                        </Link>
                     </div>
-                    <div className={s.nav}>
+                    <nav className={s.nav}>
                         <ul>
-                            <li>Home</li>
-                            <li>News</li>
-                            <li>Contact</li>
-                            <li>About</li>
+                            <li>
+                                <Link href="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Programmes</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Faculty </Link>
+                            </li>
+                            <li>
+                                <Link href="/">Infrastructure</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Events</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Events</Link>
+                            </li>
                         </ul>
-                        <img src="/search.png" alt="search" />
-                        <button>Login</button>
-                    </div>
-                </div>
-            </header>
+                    </nav>
+                </header>
+            </div>
         </>
     );
 };

@@ -2,17 +2,16 @@ import React, { ReactNode } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-interface LayoutProps {
-    children: ReactNode;
+interface Props {
+    children?: ReactNode
 }
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: Props) => {
     return (
-        <div>
+        <>
             <Header />
             {children}
             <Footer />
-        </div>
+        </>
     );
 };
 
